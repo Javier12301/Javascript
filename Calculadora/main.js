@@ -6,67 +6,53 @@ const displayValorAnterior = document.getElementById('valor-anterior');
 // // // // // // // // // // // // // // // // // // // //
 // Control de Displays // // // // // // // // // // // //
 //ValorAnterior
-let valorAnterior = 0
+let valorAnterior = '0'
 //ValorActual
-let valorActual = 0
+let valorActual = '0'
 // // // // // // // // // // // // // // // // // // //
 
+//// // // // // // // // // // // // // // // / // // //
+// Control de Calculos // // // // // // // // // // // //
+let num_anterior = []
+let num_actual = []
+// // / // // // // // // // // // // // // // // // // //
+
 botonNumeros.forEach(boton => {
-    boton.addEventListener('click', () => console.log(boton.innerHTML))
+    boton.addEventListener('click', () => displayEscribir(boton.innerHTML,'numeros'))
+})
+
+botonOperadores.forEach(boton => {
+    boton.addEventListener('click', () => displayEscribir(boton.innerHTML,'operadores'))
 })
 
 
-function calcular(){
-    if(comprobarOperador() && comprobarNumeros()){
-        const num1 = parseFloat(txtOp1.value)
-        const num2 = parseFloat(txtOp2.value)
-        let resultado;
-        switch(txtOperador.value){
-            case "+":
-               resultado = num1 + num2
-               break;
-            case "-":
-                resultado = num1 - num2
-                break;
-            case "*":
-                resultado = num1 * num2
-                break;
-            case "/":
-                resultado = num1 / num2
-                break;
-        }
-        pResultado.innerHTML = "El resultado es: " + resultado
-        pResultado.style = "color: black";
+function displayEscribir(caracter,operacion){
+    
+    switch(operacion){
+        case "numeros":
+            num = caracter;
+            if(valorActual == '0'){
+                valorActual = num;
+            }else if(valorActual != '0'){
+                valorActual += num
+            }
+            displayValorActual.innerHTML = valorActual;
+            break;
         
+        case "operadores":
+            operador = caracter
+            num_anterior.push(valorActual)
+            num_anterior.push(operador)
+            num_actual.push(valorActual)
+            displayValorAnterior.innerHTML = "";
+            for(let i = 0; i < num_actual.length; i++){
+                displayValorAnterior.innerHTML += num_anterior[i] + " "; 
+            }
 
-
-    }else{
-        pResultado.innerHTML = "No hay números o no ingreso correctamente el operador"
-        pResultado.style = "color: red";
-    }
-
-
-}
-
-function comprobarOperador(){
-    const a = txtOperador.value
-    if(a == "+" | a == "-" || a == "*" || a == "/"){
-        return true
-    }else{
-        return false
+            break;
     }
 }
 
-function comprobarNumeros(){
-    const a = parseFloat(txtOp1.value)
-    const b = parseFloat(txtOp2.value)
-    if(!isNaN(a) && !isNaN(b)){
-        return true
-    }else{
-        return false
-    }
+function calcular(){
+
 }
-
-
-
-console.log(txtOp1);
