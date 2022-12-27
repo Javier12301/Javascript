@@ -1,0 +1,39 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+
+.outside{
+    background-color: #fbf2c4;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.4em;
+    /*Primeras letras de cada palabra en mayuscula*/
+    text-transform: capitalize;
+}
+
+form{
+    margin: 0 auto;
+    width: 80%;
+    padding: 2em;
+    background-color: whitesmoke;
+    border: 1px solid rgb(167, 166, 166);
+    border-radius: 3em;
+}
+
+fieldset{
+    border: 1px solid lightgray;
+    margin: 10px;   
+    
+}
+
+legend{
+    font-weight: 600;
+}
+
+
+
