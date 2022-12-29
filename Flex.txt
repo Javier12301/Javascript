@@ -10,3 +10,7 @@ nosotros podemos centrar un elemento o elegir posición con flex-start o flex-en
 SI NUESTRO EJE PRINCIPAL ES flex-direction: column; el orden de posición será al revez
 eso quiere decir que align-items su eje será el horizontal y justify-contentet su eje será el vertical.
 
+
+//Si utilizamos grid
+
+grid-column: linea donde queremos que este / linea final que queremos que ocupe
