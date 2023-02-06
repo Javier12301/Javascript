@@ -1,0 +1,372 @@
+*{
+    /*Esto hace que la caja (Padding, content, border, margin) tenga el tamaño exacatamente que
+    especificamos*/
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    background-color: rgb(62, 49, 125);
+}
+h1{
+    font-size: 3.5em;
+    
+}
+
+h2{
+    font-size: 2.7em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 1.25em;
+    
+}
+
+li > span{
+    font-weight: bold;
+
+}
+
+.porcentaje{
+    color: rgb(89, 227, 89);
+}
+
+.porcentaje1{
+    color: rgb(227, 227, 50);
+}
+
+.porcentaje2{
+    color: rgb(221, 54, 51);
+}
+
+.porcentaje3{
+    color: red;
+}
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(58, 28, 211);
+    color: #FFFFFF;
+    border: solid rgba(0, 0, 0, 0.287) 0.1px;
+    transition: background-color 0.2s;
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.639);
+}
+
+button:hover{
+    background-color: rgb(83, 57, 210);
+}
+
+/* ESTILIZADO DE HEADER */ 
+
+header{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+header .logo{
+    margin:0;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header span{
+    color: rgb(97, 74, 217);
+    
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+header a{
+    padding: 5px 10px;
+    color: rgb(97, 74, 217);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+header a:hover{
+    color: rgb(128, 107, 232);
+}
+
+/* ESTILIZADO DE SECTIONS */
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    /*EL 90% DE MI PANTALLA*/
+    height: 90vh;
+    /*Estilizado de imagen hero*/
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.834), rgba(0,0,0,0.5)) ,url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    box-shadow: 1px 1px 15px black;
+}
+
+
+
+#soy-javier .container{
+    text-align: center;
+    /*Atractivo visualmente con 200px y 12px para mobile*/
+    padding: 230px 15px;
+    background-color: white;
+}
+
+#mis-aprendizajes{
+    background-color: rgb(188, 178, 240);
+    color: rgb(21, 2, 31);
+    border: rgb(157, 147, 208) solid 1px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#mis-aprendizajes .container{
+    text-align: center;
+    padding: 30px 0;
+}
+
+#mis-aprendizajes p{
+    color: rgb(50, 11, 71);
+    display: none;
+}
+
+
+#mis-aprendizajes h2{
+    margin-top: 0;
+}
+
+#mis-aprendizajes h3{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px black;
+}
+
+#mis-aprendizajes .card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 15px 10px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 3px 8px 2px rgba(0,0,0,0.72);
+}
+
+
+.card:first-child{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.834), rgba(0,0,0,0.5)) ,url("media/python.jpg");
+
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.834), rgba(0,0,0,0.5)) ,url("media/front-end.jpg");
+
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.834), rgba(0,0,0,0.5)) ,url("media/full-stack-cropped.jpg");
+
+}
+
+#caracteristicas{
+    text-align: center;
+    margin: 0px 0 20px 0;
+    padding: 5px;
+    background-color: rgb(121, 108, 187);
+    color: rgb(34, 1, 35);
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+    position: relative;
+}
+
+#mis-redes{
+    height: 50vh;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.social-media h1{
+    margin: 5px;
+}
+
+.social-media form button p{
+    margin: 0px 0 5px 0;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.social-media form button{
+    padding: 2px 20px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+}
+
+.button-socialmedia1{
+    background-color: #4F80AA;
+    color: #F9F2E5;
+}
+
+.button-socialmedia1:hover{
+    background-color: #5784ac;
+}
+
+.button-socialmedia2{
+    background-color: #2579B7;
+    color: #F9F2E5;
+}
+
+.button-socialmedia2:hover{
+    background-color: #3883b8;
+}
+
+
+.button-socialmedia3{
+    background-color: #444444;
+    color: #F9F2E5;
+}
+
+.button-socialmedia3:hover{
+    background-color: #656363;
+}
+
+footer{
+    margin: 5px 0 0 0;
+}
+
+footer .container{
+    color: rgba(199, 199, 199, 0.907);
+    text-align: center;
+    font-style: italic;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+footer p{
+    padding: 12px;
+}
+
+@media (min-width:720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding: 0 20px;
+    }
+
+    #soy-javier .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #soy-javier .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #soy-javier h2{
+        margin-top: 0;
+    }
+
+    #soy-javier .img-container{
+        background-image: url("media/somos-proya.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #mis-aprendizajes .container-cards{
+        display: flex;
+        justify-content: center;
+    }
+
+    #mis-aprendizajes p{
+        display: block;
+        color: white;
+        margin-top: 40px;
+        
+    }
+
+    #mis-aprendizajes h3{
+        margin: 25px 5px;
+    }
+
+
+    #mis-aprendizajes .card{
+        background-size: 100% 150px;
+        background-position-y: 0;
+        background-color: rgb(87, 14, 70);
+    }
+}
