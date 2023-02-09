@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Mini-Calculator</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Calculadora de prueba</h1>
+        </div>
+    </header>
+
+    <section id="calculator-container">
+        <div>
+
+            <div class="container">
+                <input id="input_number1" class="input_text" type="text" value="0">
+                <input id="input_number2" class="input_text" type="text">
+                <button onclick="getCalc()" id="btn">Calcular</button>
+            </div>
+            
+            <div class="container-radio">
+                <label><input type="radio" id="sumar" name="operacion" value="sumar" checked>Sumar</label>
+                <label><input type="radio" id="restar" name="operacion" value="restar">Restar</label>
+                <label><input type="radio" id="multiplicar" name="operacion" value="multiplicar">Multiplicar</label>
+                <label><input type="radio" id="division" name="operacion" value="division">División</label>
+            </div>
+
+            <div class="container">
+                <p>Resultado: <span id="resultado"></span></p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
