@@ -1,0 +1,180 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+}
+
+p{
+  font-size: 1rem;
+}
+
+h1{
+  font-size: 1.5rem;
+}
+
+header{
+  background-color: #9F2936;
+  position: sticky;
+  top: 0;
+}
+
+.logo{
+  height: 50px;
+}
+
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-toggle{
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.nav-toggle:hover {
+  filter: brightness(90%);
+  color: #F0E4B2;
+}
+
+.links{
+  height: 0;
+  overflow: hidden;
+  padding-left: 0;
+}
+
+.links a{
+font-size: 1rem;
+text-transform: capitalize;
+letter-spacing: var(--spacing);
+display: block;
+padding: 0.5rem 1rem;
+text-decoration: none;
+color: white
+}
+
+.links a:hover{
+  color: #F0E4B2;
+}
+
+.show-links{
+  height: 100%;
+  padding-left: 0;
+}
+
+
+/*Carrousel*/
+.slider-container {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  overflow-x: scroll;
+
+  scroll-snap-type: x mandatory;
+}
+
+.slider-container img {
+  flex: 0 0 100%;
+  width: 400px;
+  height: 60vh;
+  object-fit: cover;
+  
+  scroll-snap-align: center;
+}
+
+section{
+  margin: 20px 1rem;
+  box-shadow: 0px 5px 9px 2px rgba(0,0,0,0.7);
+  /*Best design cards*/
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #F0F0F0;
+  background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#Carrousel{
+  /*Best design to carrousel card*/
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #F0F0F0;
+  background-color: #F0F0F0;
+}
+
+/*Web responsive small monitor*/
+
+@media only screen and (min-width: 768px) {
+  .nav-toggle{
+    display: none;
+  }
+
+  .nav-center{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-header{
+    padding: 0;
+  }
+
+  .links{
+    height: auto;
+    display: flex;
+  }
+
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  section{
+    margin: 20px 5px;
+    height: auto;
+    box-shadow: none;
+    /*Best design cards*/
+    padding: 1rem;
+    border: 1px solid #F0F0F0;
+    border-radius: none;
+    background-color: #f0f0f000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Carrousel{
+    height: 90vh;
+  }
+
+  .slider-container {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 400px;
+    height: 90vh;
+    object-fit: cover;
+    
+    scroll-snap-align: center;
+  }
+}
+
+
