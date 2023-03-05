@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista para hacer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a522b7920d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="lista-container">
+        <h1>Mi lista de tareas</h1>
+        <p id="sugerencia">Haz doble click en una tarea para marcarla <br> como completada.</p>
+        <div class="lista-display-container">
+            <form name="Agregar-Tarea" onsubmit="return false;">
+                <input id="input-text-lista" type="text" autocomplete="off"> 
+                <button id="btn-add">Agregar</button>
+            </form>
+        </div>
+        <div id="lista-container" class="listas-agregadas-container">
+            <article name="Prueba" class="listas-agregadas">
+                <p class="item-added strikethrough">Prueba</p>
+                <button name="Prueba" class="btn-delete"><i class="fa-sharp fa-solid fa-trash"></i></button>
+            </article>
+
+            <article name="Prueba1" class="listas-agregadas">
+                <p class="item-added">Prueba1</p>
+                <button name="Prueba1" class="btn-delete"><i class="fa-sharp fa-solid fa-trash"></i></button>
+            </article>
+
+            <article name="Prueba2" class="listas-agregadas">
+                <p class="item-added">Prueba2</p>
+                <button name="Prueba2" class="btn-delete"><i class="fa-sharp fa-solid fa-trash"></i></button>
+            </article>
+        </div>
+        <button class="btn-clean-list">Limpiar lista</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

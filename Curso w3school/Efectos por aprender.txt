@@ -1,0 +1,2 @@
+Efectos por aprender:
+* Efecto parallax.
