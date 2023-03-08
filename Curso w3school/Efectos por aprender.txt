@@ -1,2 +1,31 @@
 Efectos por aprender:
 * Efecto parallax.
+
+//NODE JS
+Dependecias utiles
+
+* bcrypt-nodejs -> para encriptar contraseñas
+
+* connect-flash: sirve para mostrar mensajes emergentes a los usuarios que se dirigen a una página determinada.
+
+* ejs-mate: Herramienta para la creación de plantillas y simplifica el proceso de creación de vistas en una aplicación web.
+
+* express: express nos permite manejar las solicitudes http a los servidores.
+
+* mongoose: conexión con mongodb
+
+* morgan: Utilizado para *REGISTRAR* las solicitudes HTTP en el servidor
+
+* passport: utilizado para autenticar USUARIOS en una aplicación web
+
+* passport-local: es una estrategia de autenticación de passport que se utiliza para autenticar a los usuarios utilizando credenciales locales.
+
+//Instalación
+npm i express mongoose ejs-mate connect-flash morgan passport passport-local bcrypt-nodejs
+
+//Instalación de nodemon como dependencia de desarrollo
+npm i nodemon -D
+
+//CONCEPTO DE SERIALIZACIÓN Y DESERIALIZACIÓN
+* Serializar usuario, se utiliza para ALMACENAR INFORMACIÓN del USUARIO en la sesión.
+* La deserialización se utiliza para RECUPERAR esa información del usuario.

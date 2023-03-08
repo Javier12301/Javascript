@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an account in Kalisto</title>
+    <script src="https://kit.fontawesome.com/a522b7920d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-register.css">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="container-header">
+                <p id="sign-paragraph">Create account.</p>
+            </div>
+            <form onsubmit="return false">
+
+                <div class="container-input">
+                    <label for="input-register-username">Username</label>
+                    <div class="sec-2">
+                        <label for="input-register-username"><span class="material-symbols-outlined">person</span></label>
+                        <input type="text" id="input-register-username" name="Username" placeholder="Kalisto12301" required>
+                    </div>
+                </div>
+
+                <div class="container-input">
+                    <label for="input-register-email">Your Email Address</label>
+                    <div class="sec-2">
+                        <label for="input-register-email"><span class="material-symbols-outlined">mail</span></label>
+                        <input type="email" id="input-register-email" name="Email" placeholder="Username@gmail.com" required>
+                    </div>
+                </div>
+
+                <div class="container-input">
+                    <label for="input-register-phone">Your Phone Number</label>
+                    <div class="sec-2">
+                        <label for="input-register-phone"><span class="material-symbols-outlined">phone_iphone</span></label>
+                        <input type="text" id="input-register-phone" name="phone" placeholder="+543855219032" required>
+                    </div>
+                </div>
+
+                <div class="container-input">
+                    <label for="input-register-password">Create Password</label>
+                    <div class="sec-2">
+                        <label for="input-register-password"><span class="material-symbols-outlined">lock</span></label>
+                        <input type="password" id="input-register-password" name="Password" placeholder="******" required>
+                    </div>
+                </div>
+
+                <div class="container-input">
+                    <label for="input-register-age">Your Age</label>
+                    <div class="sec-2">
+                        <label for="input-register-age"><span class="material-symbols-outlined">cake</span></label>
+                        <input type="date" id="input-register-age" name="Age" required>
+                    </div>
+                </div>
+
+                <div class="container-input-checkbox">
+                    <label><input type="checkbox" id="input-register-terms" required> I accept <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                <br>
+                <button id="submit-button" class="btn">Get Started</button>
+            </form>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

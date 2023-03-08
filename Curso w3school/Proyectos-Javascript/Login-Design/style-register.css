@@ -1,0 +1,124 @@
+*::after, *::before, *{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-calendar{
+    background-color: #303da0;
+    color: #333;
+}
+
+body{
+    background-color: #dfe7f8;
+}
+.container-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: translateY(10px);
+}
+
+#sign-paragraph{
+    font-size: 1.6em;
+    font-weight: lighter;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:space-evenly;
+    width: 364px;
+    min-height: 99vh;
+    margin: 20px auto;
+    border-radius: 40px;
+
+    background-color: #EFF6FE;
+}
+
+.container figure{
+   font-size: 100px;
+}
+
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: center;
+    background-color: #e7ecfd;
+    padding: 15px;
+    border-radius: 30px;
+    border: solid 1px #e7ecfd;
+    margin: 20px;
+
+    color: rgb(52, 52, 52);
+    font-weight: 500;
+}
+
+
+.sec-2{
+    display: inline-block;
+       
+}
+
+.sec-2 span{
+    transform: translateY(3px);
+    font-size: 1.2em;
+    color: rgb(76, 89, 175);
+}
+
+.sec-2 input{
+    width: 240px;
+    height: 30px;
+    border: none;
+    background-color: #eef1fc00;
+    transition: font-size 0.2s;
+}
+
+.sec-2 input:focus{
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.btn{
+    width: 240px;
+    padding: 15px;
+    border: 1px solid #313b83;
+    border-radius: 15px;
+    background-color: #313b83;
+
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.btn:hover{
+    background-color: #48529d;
+    border-color: #48529d;
+}
+
+.container-hypertext-options{
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    
+
+}
+
+.container-hypertext-options a{
+    text-decoration: none;
+    color:rgb(60, 56, 56);
+}
+
+.container-hypertext-options a:hover{
+    text-decoration:underline;
+    color: #303da0;
+}
+
