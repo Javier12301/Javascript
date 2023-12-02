@@ -10,8 +10,5 @@ def main():
     print(estudiante2)
     
 
-
-
-
 if __name__ == '__main__':
     main()
